@@ -1,0 +1,357 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1493,
+          40.5265
+        ]
+      },
+      "properties": {
+        "name": "Bingham Canyon",
+        "country": "USA",
+        "note": "Utah; largest man-made excavation",
+        "role": "train_positive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.1494,
+          35.4599
+        ]
+      },
+      "properties": {
+        "name": "Mineral Park",
+        "country": "USA",
+        "note": "Arizona",
+        "role": "train_positive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.0581,
+          32.7817
+        ]
+      },
+      "properties": {
+        "name": "Santa Rita / Chino",
+        "country": "USA",
+        "note": "New Mexico",
+        "role": "train_positive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1633,
+          38.9911
+        ]
+      },
+      "properties": {
+        "name": "Yerington",
+        "country": "USA",
+        "note": "Nevada",
+        "role": "train_positive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.1653,
+          31.8386
+        ]
+      },
+      "properties": {
+        "name": "Sierrita / Twin Buttes",
+        "country": "USA",
+        "note": "Arizona",
+        "role": "train_positive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.5,
+          38.5
+        ]
+      },
+      "properties": {
+        "name": "Kansas wheat belt",
+        "country": "USA",
+        "note": "agricultural cropland",
+        "role": "train_negative"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2,
+          48.3
+        ]
+      },
+      "properties": {
+        "name": "Black Forest",
+        "country": "Germany",
+        "note": "temperate forest",
+        "role": "train_negative"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.5,
+          42.0
+        ]
+      },
+      "properties": {
+        "name": "Nebraska Sand Hills",
+        "country": "USA",
+        "note": "grass-stabilized dunes, no mineralization",
+        "role": "train_negative"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.0,
+          -17.5
+        ]
+      },
+      "properties": {
+        "name": "Pantanal wetlands",
+        "country": "Brazil",
+        "note": "wetland floodplain",
+        "role": "train_negative"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.0,
+          24.0
+        ]
+      },
+      "properties": {
+        "name": "Western Sahara erg",
+        "country": "Morocco/W. Sahara",
+        "note": "sand sea, non-mineralized",
+        "role": "train_negative"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.3667,
+          33.05
+        ]
+      },
+      "properties": {
+        "name": "Morenci",
+        "country": "USA",
+        "note": "",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.9878,
+          33.1717
+        ]
+      },
+      "properties": {
+        "name": "Ray",
+        "country": "USA",
+        "note": "",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.8608,
+          32.3717
+        ]
+      },
+      "properties": {
+        "name": "Ajo / New Cornelia",
+        "country": "USA",
+        "note": "",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -155.0,
+          59.9
+        ]
+      },
+      "properties": {
+        "name": "Pebble",
+        "country": "USA",
+        "note": "undeveloped",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.3167,
+          30.9833
+        ]
+      },
+      "properties": {
+        "name": "Cananea",
+        "country": "Mexico",
+        "note": "",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.25,
+          -33.1167
+        ]
+      },
+      "properties": {
+        "name": "Andina",
+        "country": "Chile",
+        "note": "",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.6833,
+          -20.9833
+        ]
+      },
+      "properties": {
+        "name": "Collahuasi",
+        "country": "Chile",
+        "note": "",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0333,
+          -9.5333
+        ]
+      },
+      "properties": {
+        "name": "Antamina",
+        "country": "Peru",
+        "note": "Cu-Zn skarn/porphyry",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.8667,
+          -8.9667
+        ]
+      },
+      "properties": {
+        "name": "Batu Hijau",
+        "country": "Indonesia",
+        "note": "",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.6167,
+          28.9333
+        ]
+      },
+      "properties": {
+        "name": "Reko Diq",
+        "country": "Pakistan",
+        "note": "",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7833,
+          40.5167
+        ]
+      },
+      "properties": {
+        "name": "Skouries",
+        "country": "Greece",
+        "note": "",
+        "role": "holdout"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.85,
+          41.0167
+        ]
+      },
+      "properties": {
+        "name": "Kalmakyr / Almalyk",
+        "country": "Uzbekistan",
+        "note": "",
+        "role": "holdout"
+      }
+    }
+  ]
+}
