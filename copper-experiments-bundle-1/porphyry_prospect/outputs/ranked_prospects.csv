@@ -1,0 +1,21 @@
+rank,chip_id,score,latitude,longitude,nearest_training_site_id,km_to_training_site,nearest_known_district,km_to_known_district,status
+1,chip_3714007ff04fe0b6090d3904e6e2c9a4,0.9312,31.84595,-111.14706,sierrita_twin_buttes,3.4,Ray Mine,148.1,training_site_self_match
+2,chip_162c26420a3188bcf8ec8c451f655ac1,0.9294,33.04178,-109.36342,santa_rita_chino,124.2,Morenci,6.0,known_deposit_rediscovered
+3,chip_64513328a75abd87fb9298d1d09b3a74,0.9254,33.40397,-110.90551,sierrita_twin_buttes,171.4,Miami-Inspiration-Globe,3.3,known_deposit_rediscovered
+4,chip_8dbbc551666b0f34786f6d4a1c2991c0,0.9233,33.07627,-109.36155,santa_rita_chino,124.9,Morenci,6.4,known_deposit_rediscovered
+5,chip_735bcf90ed137d33a585ed5d34f5903f,0.9228,31.88045,-111.15163,sierrita_twin_buttes,1.8,Ray Mine,144.3,training_site_self_match
+6,chip_aeb310b8ef274c1e6bbcbd8fbed255e4,0.9212,32.65084,-108.3677,santa_rita_chino,32.2,Tyrone,2.1,known_deposit_rediscovered
+7,chip_3c83d516781de5ea3676bd14047ffc2f,0.921,33.03028,-109.38313,santa_rita_chino,125.7,Morenci,8.1,known_deposit_rediscovered
+8,chip_ace0884886bb90f1aa99fb3652cbaad9,0.9145,35.36731,-114.13607,mineral_park,10.8,Miami-Inspiration-Globe,371.1,candidate_needs_manual_review
+9,chip_a9b837ff343dfbb73138f06b36200bfe,0.9143,36.23543,-106.27049,santa_rita_chino,416.8,Tyrone,440.7,candidate_needs_manual_review
+10,chip_6dff7c538fed5e595a6c17af07053711,0.9138,33.09064,-109.38613,santa_rita_chino,127.5,Morenci,9.2,known_deposit_rediscovered
+11,chip_5b11adbaf13493a54b101cfaa4359c7c,0.9136,32.63359,-108.39391,santa_rita_chino,35.3,Tyrone,4.6,known_deposit_rediscovered
+12,chip_f000c59dcd3613271d9e0451a5e56120,0.9124,39.25948,-114.96648,bingham_canyon,282.8,Robinson (Ely),8.4,known_deposit_rediscovered
+13,chip_8f288b725e04cbf1e3a764f141d43faa,0.9113,33.14526,-109.34512,santa_rita_chino,125.6,Morenci,11.4,known_deposit_rediscovered
+14,chip_7e82ad5223a44a6d6cb40ef5726e37eb,0.9112,32.79744,-108.07045,santa_rita_chino,0.7,Tyrone,31.4,training_site_self_match
+15,chip_57a37401d1859a24df33e0460f43c11d,0.9111,32.78881,-108.09437,santa_rita_chino,2.6,Tyrone,29.0,training_site_self_match
+16,chip_06c44c4746c513530eb77156c7e19153,0.9097,33.18838,-110.98866,sierrita_twin_buttes,146.7,Ray Mine,2.2,known_deposit_rediscovered
+17,chip_16bd47c76bdd1de2dda283df20406dc5,0.9073,32.94404,-109.6058,santa_rita_chino,144.7,Safford-Lone Star,17.0,candidate_needs_manual_review
+18,chip_681361dc01136c5410e5eb1766462f3f,0.9069,34.5883,-113.21623,mineral_park,131.2,Miami-Inspiration-Globe,253.5,candidate_needs_manual_review
+19,chip_2c57d961491280a0b66875f4c3309cc1,0.9064,38.10965,-117.72582,yerington,159.9,Robinson (Ely),278.4,candidate_needs_manual_review
+20,chip_982d967837213e973045438aa7301df7,0.9055,32.62496,-108.36998,santa_rita_chino,33.9,Tyrone,5.0,known_deposit_rediscovered

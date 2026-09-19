@@ -1,0 +1,706 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.14706,
+     31.84595
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_3714007ff04fe0b6090d3904e6e2c9a4",
+    "score": 0.9312,
+    "status": "training_site_self_match",
+    "nearest_known": "Sierrita/Twin Buttes",
+    "km_to_known": 3.3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -109.36342,
+     33.04178
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_162c26420a3188bcf8ec8c451f655ac1",
+    "score": 0.9294,
+    "status": "training_site_self_match",
+    "nearest_known": "Morenci",
+    "km_to_known": 6.0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -110.90551,
+     33.40397
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_64513328a75abd87fb9298d1d09b3a74",
+    "score": 0.9254,
+    "status": "training_site_self_match",
+    "nearest_known": "Miami-Inspiration-Globe",
+    "km_to_known": 3.3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.15163,
+     31.88045
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_735bcf90ed137d33a585ed5d34f5903f",
+    "score": 0.9228,
+    "status": "training_site_self_match",
+    "nearest_known": "Sierrita/Twin Buttes",
+    "km_to_known": 1.8
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.3677,
+     32.65084
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_aeb310b8ef274c1e6bbcbd8fbed255e4",
+    "score": 0.9212,
+    "status": "training_site_self_match",
+    "nearest_known": "Tyrone",
+    "km_to_known": 2.1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -114.13607,
+     35.36731
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_ace0884886bb90f1aa99fb3652cbaad9",
+    "score": 0.9145,
+    "status": "known_deposit_rediscovered",
+    "nearest_known": "Mineral Park",
+    "km_to_known": 10.7
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.27049,
+     36.23543
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_a9b837ff343dfbb73138f06b36200bfe",
+    "score": 0.9143,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Magdalena/Kelly (NM Zn-Pb-Ag-Cu skarn)",
+    "km_to_known": 251.1,
+    "region_note": "Northern NM, Rio Grande gorge / Taos area. No cataloged porphyry Cu district nearby (~250 km to nearest). Possible false positive from canyon/basalt terrain, or genuine unflagged alteration -- check USGS MRDS before following up."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -109.38613,
+     33.09064
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_6dff7c538fed5e595a6c17af07053711",
+    "score": 0.9138,
+    "status": "known_deposit_rediscovered",
+    "nearest_known": "Morenci",
+    "km_to_known": 9.2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -114.96648,
+     39.25948
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_f000c59dcd3613271d9e0451a5e56120",
+    "score": 0.9124,
+    "status": "known_deposit_rediscovered",
+    "nearest_known": "Robinson (Ely)",
+    "km_to_known": 8.4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.07045,
+     32.79744
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_7e82ad5223a44a6d6cb40ef5726e37eb",
+    "score": 0.9112,
+    "status": "training_site_self_match",
+    "nearest_known": "Santa Rita/Chino",
+    "km_to_known": 0.7
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -110.98866,
+     33.18838
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_06c44c4746c513530eb77156c7e19153",
+    "score": 0.9097,
+    "status": "training_site_self_match",
+    "nearest_known": "Ray Mine",
+    "km_to_known": 2.2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -109.6058,
+     32.94404
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_16bd47c76bdd1de2dda283df20406dc5",
+    "score": 0.9073,
+    "status": "known_deposit_rediscovered",
+    "nearest_known": "Safford-Lone Star",
+    "km_to_known": 17.0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -113.21623,
+     34.5883
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_681361dc01136c5410e5eb1766462f3f",
+    "score": 0.9069,
+    "status": "training_site_self_match",
+    "nearest_known": "Bagdad",
+    "km_to_known": 2.8
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.72582,
+     38.10965
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_2c57d961491280a0b66875f4c3309cc1",
+    "score": 0.9064,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Palmetto district (NV Au-Ag)",
+    "km_to_known": 48.7,
+    "region_note": "Walker Lane belt, NV/CA border (near Palmetto Au-Ag district and Long Valley Caldera). Known hydrothermally altered terrain, historically Au-Ag rather than Cu-porphyry -- plausible real alteration signal, not necessarily Cu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.35705,
+     32.63646
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_6687888a8992d91139693c9e216bc20e",
+    "score": 0.9042,
+    "status": "training_site_self_match",
+    "nearest_known": "Tyrone",
+    "km_to_known": 3.9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.74677,
+     37.74458
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_56a13eb02ac263ac23b8fe63a0b565ec",
+    "score": 0.904,
+    "status": "known_deposit_rediscovered",
+    "nearest_known": "Palmetto district (NV Au-Ag)",
+    "km_to_known": 13.3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -107.29972,
+     35.10572
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_46902b80a984d90ad6afea90da41f994",
+    "score": 0.9023,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Magdalena/Kelly (NM Zn-Pb-Ag-Cu skarn)",
+    "km_to_known": 108.5,
+    "region_note": "Central NM, near the Magdalena/Kelly Zn-Pb-Ag-Cu skarn belt. Plausibly the edge of a real, cataloged mineral belt rather than a novel discovery."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.0657,
+     31.96381
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_3dd37fbcd5ec9d80bb8fa8b784c27263",
+    "score": 0.9012,
+    "status": "known_deposit_rediscovered",
+    "nearest_known": "Sierrita/Twin Buttes",
+    "km_to_known": 11.9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.70105,
+     37.77332
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_063fe3ca793b76f9b26ea7a1a5ef0558",
+    "score": 0.9011,
+    "status": "known_deposit_rediscovered",
+    "nearest_known": "Palmetto district (NV Au-Ag)",
+    "km_to_known": 12.6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.7388,
+     33.78917
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_181026b1bf0214d4df0ac211f9f4e6d8",
+    "score": 0.901,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Morenci",
+    "km_to_known": 97.3,
+    "region_note": "West-central NM / east AZ border, near Morenci. Could be Morenci district sprawl or a distinct nearby occurrence -- worth a claims check."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.99251,
+     37.12367
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_a4393db8d63586139184fec629f2be11",
+    "score": 0.9009,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Palmetto district (NV Au-Ag)",
+    "km_to_known": 70.1,
+    "region_note": "Walker Lane belt, NV/CA border (near Palmetto Au-Ag district and Long Valley Caldera). Known hydrothermally altered terrain, historically Au-Ag rather than Cu-porphyry -- plausible real alteration signal, not necessarily Cu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -118.0639,
+     36.39353
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_3b9d4ddf94d5f1134017909cbd81abd5",
+    "score": 0.9009,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Palmetto district (NV Au-Ag)",
+    "km_to_known": 148.4,
+    "region_note": "No cataloged porphyry Cu district within the reference radius used here -- needs a manual USGS MRDS / claims check before treating as a lead."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -110.95798,
+     33.41835
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_7b7230365a6628fa39047555ae50c343",
+    "score": 0.9007,
+    "status": "training_site_self_match",
+    "nearest_known": "Pinto Valley",
+    "km_to_known": 2.7
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -109.56575,
+     34.66591
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_117610b6fb54c5c0d6d37596e3f25177",
+    "score": 0.9004,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Morenci",
+    "km_to_known": 181.3,
+    "region_note": "West-central NM / east AZ border, near Morenci. Could be Morenci district sprawl or a distinct nearby occurrence -- worth a claims check."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.05375,
+     31.88907
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_8f17f5561c0f55f1fce3e4e61abffa8f",
+    "score": 0.9004,
+    "status": "known_deposit_rediscovered",
+    "nearest_known": "Sierrita/Twin Buttes",
+    "km_to_known": 7.8
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -116.80347,
+     37.58935
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_23e4a71a1de7ee9f9856bc7f728b664f",
+    "score": 0.8998,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Palmetto district (NV Au-Ag)",
+    "km_to_known": 72.6,
+    "region_note": "Walker Lane belt, NV/CA border (near Palmetto Au-Ag district and Long Valley Caldera). Known hydrothermally altered terrain, historically Au-Ag rather than Cu-porphyry -- plausible real alteration signal, not necessarily Cu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.44023,
+     36.78735
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_c386f488c95f94fca854544f6dc8d9fb",
+    "score": 0.8997,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Palmetto district (NV Au-Ag)",
+    "km_to_known": 100.5,
+    "region_note": "Walker Lane belt, NV/CA border (near Palmetto Au-Ag district and Long Valley Caldera). Known hydrothermally altered terrain, historically Au-Ag rather than Cu-porphyry -- plausible real alteration signal, not necessarily Cu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -115.56321,
+     35.56853
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_e953f27ec92e3c21c5167ce17e9aeaaf",
+    "score": 0.8993,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Mineral Park",
+    "km_to_known": 121.8,
+    "region_note": "Mojave Desert, CA. No cataloged Cu district nearby; historic Au/borate mining in the general area (not Cu-specific)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -110.56768,
+     35.23508
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_7fffad9f41efaf23cc16dd99e3c75afd",
+    "score": 0.8991,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Miami-Inspiration-Globe",
+    "km_to_known": 206.0,
+    "region_note": "Mogollon Rim, AZ, ~200 km from Miami-Inspiration-Globe. Forested terrain, atypical for this desert-trained model -- treat with extra skepticism."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -118.33527,
+     37.60085
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_99185424c096b51b07c6d429b1e5b3cd",
+    "score": 0.8987,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Palmetto district (NV Au-Ag)",
+    "km_to_known": 63.6,
+    "region_note": "Walker Lane belt, NV/CA border (near Palmetto Au-Ag district and Long Valley Caldera). Known hydrothermally altered terrain, historically Au-Ag rather than Cu-porphyry -- plausible real alteration signal, not necessarily Cu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.8039,
+     34.79527
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_1a59e6ba236438771992810e06538ce8",
+    "score": 0.8985,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Magdalena/Kelly (NM Zn-Pb-Ag-Cu skarn)",
+    "km_to_known": 85.4,
+    "region_note": "Central NM, near the Magdalena/Kelly Zn-Pb-Ag-Cu skarn belt. Plausibly the edge of a real, cataloged mineral belt rather than a novel discovery."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -116.83691,
+     37.68421
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_a1dd30448e384c7e79d85f63980d9958",
+    "score": 0.8983,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Palmetto district (NV Au-Ag)",
+    "km_to_known": 68.9,
+    "region_note": "Walker Lane belt, NV/CA border (near Palmetto Au-Ag district and Long Valley Caldera). Known hydrothermally altered terrain, historically Au-Ag rather than Cu-porphyry -- plausible real alteration signal, not necessarily Cu."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -107.16317,
+     34.36696
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_2abc3e8856006221283fd4c73574531f",
+    "score": 0.8981,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Magdalena/Kelly (NM Zn-Pb-Ag-Cu skarn)",
+    "km_to_known": 28.1,
+    "region_note": "Central NM, near the Magdalena/Kelly Zn-Pb-Ag-Cu skarn belt. Plausibly the edge of a real, cataloged mineral belt rather than a novel discovery."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.85943,
+     36.12332
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_7a851488f80986696343b5c4dafc75b1",
+    "score": 0.898,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Bagdad",
+    "km_to_known": 209.5,
+    "region_note": "Northern AZ canyon/plateau country near Grand Canyon. Likely false positive from red sandstone canyon texture rather than porphyry alteration."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.71906,
+     31.25954
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_49a86474f2b5a955a9bac19c8f295d15",
+    "score": 0.8978,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Santa Rita/Chino",
+    "km_to_known": 279.3,
+    "region_note": "Trans-Pecos volcanic field, west TX / Chihuahua border. No cataloged Cu district nearby."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -107.19207,
+     33.15676
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_ac3b03a761cb4dcd2855b4af0f0662ca",
+    "score": 0.8976,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Santa Rita/Chino",
+    "km_to_known": 91.2,
+    "region_note": "No cataloged porphyry Cu district within the reference radius used here -- needs a manual USGS MRDS / claims check before treating as a lead."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -110.57525,
+     35.24083
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_d47caf2dd0711e9b6838946d02470322",
+    "score": 0.8975,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Miami-Inspiration-Globe",
+    "km_to_known": 206.6,
+    "region_note": "Mogollon Rim, AZ, ~200 km from Miami-Inspiration-Globe. Forested terrain, atypical for this desert-trained model -- treat with extra skepticism."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -107.45359,
+     35.05685
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_a27257873f7b0ccebd3a12043838b54c",
+    "score": 0.8975,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Magdalena/Kelly (NM Zn-Pb-Ag-Cu skarn)",
+    "km_to_known": 104.4,
+    "region_note": "Central NM, near the Magdalena/Kelly Zn-Pb-Ag-Cu skarn belt. Plausibly the edge of a real, cataloged mineral belt rather than a novel discovery."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -110.88087,
+     33.39822
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_404249c25a228695e389160f3d8e491e",
+    "score": 0.8974,
+    "status": "training_site_self_match",
+    "nearest_known": "Miami-Inspiration-Globe",
+    "km_to_known": 1.0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -116.53091,
+     34.64579
+    ]
+   },
+   "properties": {
+    "chip_id": "chip_84123e33c32557ced068d04babcc1c1a",
+    "score": 0.8973,
+    "status": "candidate_needs_manual_review",
+    "nearest_known": "Mineral Park",
+    "km_to_known": 226.9,
+    "region_note": "No cataloged porphyry Cu district within the reference radius used here -- needs a manual USGS MRDS / claims check before treating as a lead."
+   }
+  }
+ ]
+}

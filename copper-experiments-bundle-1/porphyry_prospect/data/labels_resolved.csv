@@ -1,0 +1,13 @@
+site_id,label,latitude,longitude,collection_id,chip_id,chip_centroid_lon,chip_centroid_lat,resolved_via
+bingham_canyon,positive,40.5444,-112.1047,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_85bbdae01581c70be0d1dda40d3ae840,-112.104699,40.544412,search_by_location(top_k=1)
+mineral_park,positive,35.4270,-114.2290,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_e9b8f80f99e775aff951dc389c1b556e,-114.229243,35.427673,search_by_location(top_k=1)
+santa_rita_chino,positive,32.7917,-108.0673,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_92d6af9a1bf2782787775659c74be23f,-108.066679,32.791689,search_by_location(top_k=1)
+yerington,positive,39.0060,-119.1640,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_ea4e4b389c198547a2c2253989a2e215,-119.163370,39.006516,search_by_location(top_k=1)
+sierrita_twin_buttes,positive,31.8739,-111.1339,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_d6c9cb3e326e41b5fa82219c83c005aa,-111.134158,31.874701,search_by_location(top_k=1)
+basin_fill_ut,negative,39.5000,-111.5000,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_82f818bd579f16476941c2b8e7c3f6ef,-111.501837,39.500942,search_by_location(top_k=1)
+barren_range_nv,negative,39.3000,-117.0020,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_dd6ac3a8c6d8167fbcd094f14ccd7db3,-117.001672,39.299722,search_by_location(top_k=1)
+basin_fill_az,negative,33.4990,-111.8990,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_0b9a665607de7a4738ea61108c34e0a6,-111.898693,33.498834,search_by_location(top_k=1)
+volcanics_no_cu_az,negative,33.4010,-111.3490,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_742fa2ee2368bbcc32b45f4bd80cc225,-111.348885,33.401099,search_by_location(top_k=1)
+near_district_offdeposit_ut,negative,40.1990,-111.9000,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_238cef51c7ae054138bcb57a1d96bdcf,-111.900436,40.199463,search_by_location(top_k=1)
+bingham_canyon_pit_disturbed,excluded,40.5265,-112.1497,col_019de50b5b2b70cca7a3a5b4bc42c0a9,chip_b7ff7ec9b4530aa048f2388d349c758b,-112.150893,40.527165,search_by_location(top_k=1) -- NOT used as positive or negative; disturbed pit excluded per plan
+bisbee,excluded_no_coverage,31.4483,-109.8975,col_019de50b5b2b70cca7a3a5b4bc42c0a9,,,,"search_by_location -> HTTP 422 'Search point is outside collection bounds' (also tried 31.47N, 31.55N is the nearest covered point ~11km N)"

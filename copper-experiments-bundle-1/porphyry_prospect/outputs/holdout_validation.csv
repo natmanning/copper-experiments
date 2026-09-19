@@ -1,0 +1,6 @@
+held_out_site_id,true_lat,true_lon,best_hit_chip_id,best_hit_lat,best_hit_lon,best_hit_rank,best_hit_score,km_from_true_location,verdict
+bingham_canyon,40.54441,-112.10470,chip_8fa7c9a5541e22a208ffdba6036c1aa9,40.52716,-112.13577,1,0.8166,3.14,pass_same_district
+mineral_park,35.42767,-114.22924,chip_ace0884886bb90f1aa99fb3652cbaad9,35.36731,-114.13607,1,0.8781,10.05,pass_same_district
+santa_rita_chino,32.79169,-108.06668,chip_ce5098cc312108b14e988a41322b2f6e,32.71408,-107.96549,1,0.8560,10.90,pass_same_district
+yerington,39.00652,-119.16337,chip_f10042c0f20552ad9f12ec8c192ea644,38.94615,-119.22815,1,0.8724,7.90,pass_same_district
+sierrita_twin_buttes,31.87470,-111.13416,chip_0cc908bffd2b5b692a68e966ffcd4dd3,31.88907,-111.13838,1,0.8854,1.66,pass_tight

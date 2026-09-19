@@ -1,0 +1,6 @@
+site_id,name,latitude,longitude,rationale,lgnd_conus_aef_covered
+basin_fill_ut,Central Utah basin farmland,39.5000,-111.5000,"Random unmineralized alluvial basin fill, Basin & Range interior. Background negative.",yes
+barren_range_nv,Central Nevada barren volcanic range (Toiyabe area),39.3000,-117.0020,"Volcanic/sedimentary Basin & Range terrain with no known Cu-Mo district — geologically similar rock type to the reference belt but no reported deposit. Reduces false positives from generic 'mountainous desert' texture.",yes
+basin_fill_az,Phoenix basin desert flat,33.4990,-111.8990,"Unmineralized Basin & Range valley-fill sediment near an urban margin. Background negative.",yes
+volcanics_no_cu_az,Superstition volcanics (non-Cu),33.4010,-111.3490,"Tertiary volcanic terrain without a reported porphyry Cu occurrence. Geologically-similar-looking barren analog per the plan.",yes
+near_district_offdeposit_ut,"Salt Lake Valley basin fill (near Bingham, off-deposit)",40.1990,-111.9000,"Close to the Bingham district but off the actual stock/halo — helps the model separate 'near a known district' from 'on the halo signature itself'.",yes

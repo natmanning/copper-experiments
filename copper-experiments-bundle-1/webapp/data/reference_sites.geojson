@@ -1,0 +1,80 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -112.1497,
+     40.5265
+    ]
+   },
+   "properties": {
+    "name": "Bingham Canyon",
+    "state": "UT",
+    "note": "Reference porphyry Cu-Mo-Au + Pb-Zn-Ag skarn halo. Zoning model site."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -114.229,
+     35.427
+    ]
+   },
+   "properties": {
+    "name": "Mineral Park",
+    "state": "AZ",
+    "note": "Reference porphyry Cu-Mo, clean concentric Cu-Pb-Zn-Au-Ag zoning."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.0673,
+     32.7917
+    ]
+   },
+   "properties": {
+    "name": "Santa Rita / Chino Mine",
+    "state": "NM",
+    "note": "Reference porphyry Cu with Pb-Zn-Ag halo. Largest porphyry Cu deposit in NM."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -119.164,
+     39.006
+    ]
+   },
+   "properties": {
+    "name": "Yerington district",
+    "state": "NV",
+    "note": "Reference tilted/exhumed porphyry Cu-Mo-Au system."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.1339,
+     31.8739
+    ]
+   },
+   "properties": {
+    "name": "Sierrita / Twin Buttes (Pima district)",
+    "state": "AZ",
+    "note": "Reference porphyry Cu-Mo-Ag-Zn-Pb-Au."
+   }
+  }
+ ]
+}

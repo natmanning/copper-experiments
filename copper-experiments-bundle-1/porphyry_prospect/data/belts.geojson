@@ -1,0 +1,72 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "belt_id": "basin_and_range_sw_us",
+        "name": "Basin and Range / Southwest US porphyry belt (MVP bbox)",
+        "status": "runnable",
+        "lgnd_collection": "col_019de50b5b2b70cca7a3a5b4bc42c0a9",
+        "lgnd_collection_name": "CONUS AEF 2022",
+        "notes": "Rough bounding-box proxy for the AZ/NM/UT/NV porphyry belt, used to scope search_by_chips per the plan's geometric-filtering step. Not a precise metallogenic-belt polygon; refine with a real belt shapefile before v1.1."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-120.0, 31.0],
+            [-106.0, 31.0],
+            [-106.0, 41.0],
+            [-120.0, 41.0],
+            [-120.0, 31.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "belt_id": "andean_belt",
+        "name": "Andean porphyry belt (Chile/Peru/Argentina)",
+        "status": "not_runnable_no_lgnd_coverage",
+        "lgnd_collection": null,
+        "notes": "Placeholder for v1.1 geographic diversity per the plan. No LGND collection currently covers this area (only CONUS AEF 2022, California NAIP 2020-2022, and France Sentinel2 2024-2025 exist in this tenant as of this run)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-72.0, -35.0],
+            [-66.0, -35.0],
+            [-66.0, -18.0],
+            [-72.0, -18.0],
+            [-72.0, -35.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "belt_id": "sw_pacific_belt",
+        "name": "Southwest Pacific porphyry belt (PNG/Laos/Indonesia/Philippines)",
+        "status": "not_runnable_no_lgnd_coverage",
+        "lgnd_collection": null,
+        "notes": "Placeholder for v1.1 geographic/climatic diversity per the plan (Sepon, Wafi-Golpu). No LGND collection currently covers this area."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [100.0, -10.0],
+            [155.0, -10.0],
+            [155.0, 20.0],
+            [100.0, 20.0],
+            [100.0, -10.0]
+          ]
+        ]
+      }
+    }
+  ]
+}
