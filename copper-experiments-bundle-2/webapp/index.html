@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Global Copper Porphyry Halo Prospector</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  :root {
+    --bg: #0b0f14;
+    --panel: #121820;
+    --panel-border: #253140;
+    --text: #e6edf3;
+    --muted: #8b98a5;
+    --accent: #ff8a3d;
+    --self-match: #6b7280;
+    --reid: #4dd0e1;
+    --candidate: #ff8a3d;
+  }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  #map { position: absolute; inset: 0; }
+  .panel { position: absolute; z-index: 1000; background: var(--panel);
+    border: 1px solid var(--panel-border); border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,.35); }
+  #title { top: 12px; left: 12px; padding: 12px 16px; max-width: 340px; }
+  #title h1 { font-size: 15px; margin: 0 0 4px; }
+  #title p { margin: 0; color: var(--muted); font-size: 12px; }
+  #controls { top: 12px; right: 12px; padding: 14px 16px; width: 240px; }
+  #controls h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
+    margin: 0 0 8px; }
+  .row { display: flex; align-items: center; gap: 8px; margin: 6px 0; font-size: 13px; }
+  .swatch { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  #banner { bottom: 12px; left: 12px; right: 12px; padding: 10px 14px; font-size: 12px;
+    color: var(--muted); display: none; }
+  #banner.show { display: block; }
+  #legend-count { color: var(--muted); font-variant-numeric: tabular-nums; margin-left: auto; }
+  input[type="range"] { width: 100%; }
+  .leaflet-popup-content-wrapper { background: var(--panel); color: var(--text); border-radius: 8px; }
+  .leaflet-popup-tip { background: var(--panel); }
+  .popup h3 { margin: 0 0 4px; font-size: 13px; }
+  .popup .meta { color: var(--muted); font-size: 11px; margin-bottom: 6px; }
+  .popup img { width: 100%; border-radius: 6px; display: block; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div id="title" class="panel">
+  <h1>Global Copper Porphyry Halo Prospector</h1>
+  <p>Clay embeddings, centroid-difference scoring over the global LGND archive. Reconnaissance
+     guidance, not drill-ready targets.</p>
+</div>
+
+<div id="controls" class="panel">
+  <h2>Layers</h2>
+  <label class="row"><input type="checkbox" id="toggle-train" checked>
+    <span class="swatch" style="background:#3b82f6"></span> Training deposits</label>
+  <label class="row"><input type="checkbox" id="toggle-negative" checked>
+    <span class="swatch" style="background:#6b7280"></span> Negative controls</label>
+  <label class="row"><input type="checkbox" id="toggle-holdout" checked>
+    <span class="swatch" style="background:#9333ea"></span> Held-out known deposits</label>
+  <label class="row"><input type="checkbox" id="toggle-self" checked>
+    <span class="swatch" style="background:var(--self-match)"></span> Self-matches</label>
+  <label class="row"><input type="checkbox" id="toggle-reid" checked>
+    <span class="swatch" style="background:var(--reid)"></span> Re-identified known</label>
+  <label class="row"><input type="checkbox" id="toggle-candidate" checked>
+    <span class="swatch" style="background:var(--candidate)"></span> Candidates
+    <span id="legend-count"></span></label>
+  <h2 style="margin-top:12px">Min. score</h2>
+  <input type="range" id="score-min" min="0" max="1" step="0.01" value="0">
+  <div class="row"><span id="score-min-label" class="meta" style="color:var(--muted)">0.00</span></div>
+  <h2 style="margin-top:12px">Basemap</h2>
+  <label class="row"><input type="radio" name="basemap" value="imagery" checked> Satellite (Esri)</label>
+  <label class="row"><input type="radio" name="basemap" value="osm"> Streets (OSM)</label>
+</div>
+
+<div id="banner" class="panel">
+  No candidate data yet — run <code>pipeline.py</code> with a global LGND collection to populate
+  this layer. The training/held-out deposit markers above are real, cited locations shown for
+  reference.
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const map = L.map('map', { worldCopyJump: true }).setView([15, 10], 3);
+
+// Both basemaps are free XYZ tile endpoints — no API key required.
+const imagery = L.tileLayer(
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+  { attribution: 'Tiles &copy; Esri', maxZoom: 18 }
+).addTo(map);
+const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors', maxZoom: 19
+});
+
+document.querySelectorAll('input[name=basemap]').forEach(el => el.addEventListener('change', e => {
+  if (e.target.value === 'osm') { map.removeLayer(imagery); osm.addTo(map); }
+  else { map.removeLayer(osm); imagery.addTo(map); }
+}));
+
+const COLORS = {
+  train_positive: '#3b82f6',
+  train_negative: '#6b7280',
+  holdout: '#9333ea',
+  self_match: '#6b7280',
+  reidentified_known: '#4dd0e1',
+  candidate: '#ff8a3d',
+};
+
+function marker(feature, latlng, radius, key) {
+  return L.circleMarker(latlng, {
+    radius, color: '#fff', weight: 1, fillColor: COLORS[key], fillOpacity: 0.85,
+  });
+}
+
+function knownPopup(p) {
+  return `<div class="popup"><h3>${p.name}</h3><div class="meta">${p.country} · ${p.role.replace('_', ' ')}</div>${p.note || ''}</div>`;
+}
+
+function candidatePopup(p) {
+  const score = (p.score ?? 0).toFixed(3);
+  const date = (p.datetime || '').slice(0, 10);
+  const bucket = p.bucket.replace('_', ' ');
+  return `<div class="popup">
+    <h3>${bucket}${p.matched_known_site ? ' — ' + p.matched_known_site : ''}</h3>
+    <div class="meta">score ${score} · ${date} · ${p.collection || ''}</div>
+    <img src="${p.thumbnail_url}" loading="lazy" onerror="this.style.display='none'">
+  </div>`;
+}
+
+const layers = {};
+
+function loadKnown() {
+  fetch('data/known_deposits.geojson').then(r => r.json()).then(fc => {
+    const byRole = { train_positive: [], train_negative: [], holdout: [] };
+    fc.features.forEach(f => byRole[f.properties.role]?.push(f));
+    for (const role of Object.keys(byRole)) {
+      layers[role] = L.geoJSON({ type: 'FeatureCollection', features: byRole[role] }, {
+        pointToLayer: (f, latlng) => marker(f, latlng, 6, role).bindPopup(knownPopup(f.properties)),
+      }).addTo(map);
+    }
+  }).catch(() => {});
+}
+
+let candidateFeatures = [];
+function loadCandidates() {
+  fetch('data/candidates.geojson').then(r => r.json()).then(fc => {
+    candidateFeatures = fc.features;
+    document.getElementById('banner').classList.toggle('show', candidateFeatures.length === 0);
+    renderCandidates();
+  }).catch(() => document.getElementById('banner').classList.add('show'));
+}
+
+function renderCandidates() {
+  ['self_match', 'reidentified_known', 'candidate'].forEach(b => layers[b]?.remove());
+  const minScore = parseFloat(document.getElementById('score-min').value);
+  const visible = { self_match: [], reidentified_known: [], candidate: [] };
+  let shown = 0;
+  candidateFeatures.forEach(f => {
+    if ((f.properties.score ?? 0) < minScore) return;
+    visible[f.properties.bucket]?.push(f);
+  });
+  for (const bucket of Object.keys(visible)) {
+    const toggle = document.getElementById(
+      bucket === 'self_match' ? 'toggle-self' : bucket === 'reidentified_known' ? 'toggle-reid' : 'toggle-candidate'
+    );
+    layers[bucket] = L.geoJSON({ type: 'FeatureCollection', features: visible[bucket] }, {
+      pointToLayer: (f, latlng) => marker(f, latlng, bucket === 'candidate' ? 5 : 4, bucket)
+        .bindPopup(candidatePopup(f.properties)),
+    });
+    if (toggle.checked) layers[bucket].addTo(map);
+    if (bucket === 'candidate') shown = visible[bucket].length;
+  }
+  document.getElementById('legend-count').textContent = shown ? `(${shown})` : '';
+}
+
+document.getElementById('score-min').addEventListener('input', e => {
+  document.getElementById('score-min-label').textContent = parseFloat(e.target.value).toFixed(2);
+  renderCandidates();
+});
+
+[['toggle-train', 'train_positive'], ['toggle-negative', 'train_negative'], ['toggle-holdout', 'holdout']]
+  .forEach(([id, role]) => document.getElementById(id).addEventListener('change', e => {
+    if (!layers[role]) return;
+    if (e.target.checked) layers[role].addTo(map); else layers[role].remove();
+  }));
+
+[['toggle-self', 'self_match'], ['toggle-reid', 'reidentified_known'], ['toggle-candidate', 'candidate']]
+  .forEach(([id]) => document.getElementById(id).addEventListener('change', renderCandidates));
+
+loadKnown();
+loadCandidates();
+</script>
+</body>
+</html>
